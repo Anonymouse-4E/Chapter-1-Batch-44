@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Web</title>
+    <link a href="assets/CSS/styles1.css" rel="stylesheet">
+    <link a href="assets/css/style3.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+  />
+</head>
+<body>
+
+    <nav>
+        <div class="item-left">
+            <ul>
+                <li class="imgLogo">
+                    <img src="assets/Images/Brand.png" alt="logoBrand">
+                </li>
+                &nbsp;
+                <li>
+                    <a class="active" href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="index.html">Add Project</a>
+                </li>
+            </ul>
+        </div>
+        <div class="item-right">
+          <a href="Contact.html">Contact Me</a>
+        </div>
+  </nav>
+    <div class="container" >
+        <div class="box row bg-white p-5 shadow rounded-3 mt-5 mb-5 pb-5">
+            <div class="col-lg-6 pt-3 ps-3">
+            <h1 >Hi Welcome to my hut</h1>
+             <p class="p" >Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed tristique 
+            purus orci libero egestas ut. Augue suspendisse blandit lorem massa 
+            ipsum , urna, egestas mi , lacinia. Dui fusce etiam libero, lectus amet, 
+            risus molestie malesuada. Odio nam purus consecture euismod 
+            congue leo quisque. Tarpis amet sollictudin nunc non in lectus dolor 
+            amet. Amet ullamcoper faucibus tincidunt accumsan ac adipiscing 
+            arcu. amet ulamcorper faucibus tincidunt accumsan ac adipiscing arcu. Donec tristique at proin maecenas. Ante elit et iaculis ac sit.
+            </p>
+            <div class="d-flex mb-5 mt-5 justify-content-start align-item">
+              <a
+                href="#"
+                class="btn btn-dark text me-3-white rounded-pill me-3 rounded-pill"
+                >contact</a
+              >
+              <a href="/assets/Images/image contoh.jpeg" style="text-decoration: none;" download>download cv <i class="bi bi-download text-dark" ></i>
+              </a>
+            </div>
+            <div class="d-flex mb-3 justify-content-start align-items-center">
+              <a href="https://wa.me/6285772958796">
+              <i class="bi bg-dark text-white rounded-circle p-3 fs-5 me-3 bi-whatsapp"></i>
+              </a>
+              <a href="https://web.facebook.com/profile.php?id=100088791433668">
+              <i class="bi bg-dark text-white rounded-circle p-3 fs-5 me-3 bi-facebook"></i>
+              </a>
+              <i class="bi bg-dark text-white rounded-circle p-3 fs-5 me-3 bi-twitter"></i>
+            </div>
+            </div>
+            <div class="col-lg-6 d-flex justify-content-end">
+            <div class="card shadow" style="width: 20rem">
+              <img src="assets/Images/sunrise.jpg " class="card-img-top" alt="..." style="height: 400px;" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Nima Tuljannah</h5>
+              <p class="card-text">sunrise</p>
+              <i class="card-text">Fullstack</i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="container-fluid mt-0" style="background-color:#13863696 ; padding: 30px; width: 100%;">
+    <form action="/search" method="GET">
+      <label>Search</label>
+      <input class="rounded" type="text" name="keyword">
+      <button class="btn btn-dark text-white rounded-pill btn-lg" type="submit"></button>
+    </form>
+      <div class="row py-5 fs-2 fw-bolder" >
+        <h3 class="fw-bold m-0 text-center mb-5" style="color: black ;">MY PROJECT</h3>
+      <div class="d-flex flex-wrap justify-content-center align-items-baseline gap-5">
+        {{range $index, $data := .result}}
+      <div class="card rounded-4" style="width: 23rem; height:auto; box-shadow: 0px 5px 20px  #4e4c4c; background-color: white; padding:20px;">
+         <img src="/Uploads/{{$data.Image}}" class="card-img-top p-3 rounded-4" style="height:300px;">
+          <div class="project_content" style="margin-top: 20px;">
+              <p class="card-title" style="position: relative; left:0 px" >
+                <a href="/BlogDetail/{{$data.Id}}" style="text-decoration: none; font-size: 30px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: black;">{{$data.Judul}}</a>
+              </p>
+              <p class="card-text" style="font-size: 25px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;">
+              {{$data.Duration}}
+              </p>
+              <p class="card-text" style="font-size:20px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;">
+              {{$data.Description}}...
+              </p>
+              <p class="card-text" style="font-size:20px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;">
+               User : {{$data.User_Login}}
+              </p>
+              <div class="Checkbox mb-3">
+                {{range $index, $data := $data.Checkbox}}
+                <img src="/assets/icon/icons-{{$data}}.svg" style="width: 50px; height: 40px;" alt="">
+                {{end}}
+              </div>
+              {{if $.Data.IsLogin}}
+              <div class="d-flex gap-3 justify-content-between btn-group">
+                <a href="/EditInput/{{$data.Id}}" class="btn rounded-4 btn-dark btn-edit">Edit</a>
+                <a href="/Delete/{{$data.Id}}" class="btn rounded-4 btn-dark btn-delete">Delete</a>
+              </div>
+              {{end}}
+            </div>
+          </div>
+        {{end}}
+      </div>  -->
+    </body>
+</html>

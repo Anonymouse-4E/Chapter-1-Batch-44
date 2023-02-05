@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link a href="assets/CSS/styles1.css" rel="stylesheet">
+  <link a href="assets/CSS/styles2.css" rel="stylesheet">
+  <link a href="assets/CSS/styles34.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- <div
+    style="width: 350px; border: 1px solid black; padding: 15px; margin: 150px auto ; box-shadow: 0px 0px 20px 0px; border: radius 5px;">
+    <img src="img.jpeg" alt="img" style="width:100%; border-radius: 15px" />
+    <h1>Nima Tuljannah</h1>
+    <p style="color: gray;">Hai saya adalah nima tuljannah</p>
+    <table style="border: 1px solid black; width: 100%; text-align: center; border-collapse: collapse;">
+      <tr>
+        <th style="border: 1px solid black;">project name</th>
+        <th style="border: 1px solid black;">Year</th>
+      </tr>
+      <tr>
+        <td style="border: 1px solid black;">DumbWays App</td>
+        <td style="border: 1px solid black;">2022</td>
+      </tr>
+    </table>
+  </div> -->
+  <nav>
+    <div class="item-left">
+        <ul>
+            <li class="imgLogo">
+                <img src="assets/Images/Brand.png" alt="logoBrand">
+            </li>
+            &nbsp;
+            <li>
+                <a class="active" href="home.html">Home</a>
+            </li>
+            <li>
+                <a href="index.html">Add Project</a>
+            </li>
+        </ul>
+    </div>
+    <div class="item-right">
+      <a href="Contact.html">Contact Me</a>
+    </div>
+</nav>
+  <div class="div">
+    <form id="form">
+      <div class="grid-1">
+        <h1 style="text-align: center;">Add Project</h1>
+        <br>
+        <div class="grid-item">
+          <label for="judul">judul</label>
+          <input type="text" id="judul" required>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div class="grid-item">
+          <label for="start-date">start-date</label>
+          <input type="date" id="start-date" name="start-date" required>
+        </div>
+        <div class="grid-item">
+          <label for="end-date">end-date</end-date></label>
+          <input type="date" id="end-date" name="end-date" required>
+        </div>
+      </div>
+      <div class="grid-1">
+        <div class="grid-item">
+          <label for="description" class="label">Deskription</label>
+          <textarea id="description" placeholder="text" required></textarea>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div class="grid-item">
+          <input type="checkbox" id="nodeJs" name="nodeJs">
+          <label for="nodeJs">node-js</label>
+        </div>
+        <div class="grid-item">
+          <input type="checkbox" id="reactJs" name="reactJs">
+          <label for="reactJs">React-JS</label>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div class="grid-item">
+          <input type="checkbox" id="nextJs" name="nextJs">
+          <label for="nextJs">next-js</label>
+        </div>
+        <div class="grid-item">
+          <input type="checkbox" id="typeScript" name="typeScript">
+          <label for="typeScript">typescript</label>
+        </div>
+      </div>
+      <div class="grid-1">
+        <div class="grid-item">
+          <label for="image" class="label">image:
+          </label>
+          <input type="file" id="myFile" required>
+        </div>
+      </div>
+      <div class="grid-1">
+        <div class="grid-item" style="color: white;">
+          <button class="button" type="submit" name="submit">Submit</button>
+        </div>
+      </div>
+    </form>
+
+    <div style="background-color:blue ; padding: 1pc;">
+      <p style=" margin-left: 600px;">MY PROJECT</p>
+      <div id="myProject1" class="container" style="display: grid; grid-template-columns: repeat(3, 1fr); padding: 8px;background-color: rgb(17, 0, 255)">
+
+    <script src="assets/JS/script.js">
+    </script>
+  </div>
+
+</body>
+
+</html>

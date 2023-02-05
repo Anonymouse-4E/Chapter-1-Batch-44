@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link a href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- <div style="width: 350px; border: 1px solid black; padding: 15px; margin: 150px auto ; box-shadow: 0px 0px 20px 0px; border: radius 5px;">
+        <img src="img.jpeg" alt="img" style="width:100%; border-radius: 15px"/>
+        <h1>Nima Tuljannah</h1>
+        <p style="color: gray;">Hai saya adalah nima tuljannah</p>
+        <table style="border: 1px solid black; width: 100%; text-align: center; border-collapse: collapse;">
+            <tr>
+                <th style="border: 1px solid black;">project name</th>
+                <th style="border: 1px solid black;">Year</th>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;">DumbWays App</td>
+                <td style="border: 1px solid black;">2022</td>
+            </tr>
+        </table>
+    </div> -->
+    <nav>
+        <div class="item-left">
+            <ul>
+                <li class="imgLogo">
+                    <img src="assets/Images/Brand.png" alt="logoBrand">
+                </li>
+                &nbsp;
+                <li>
+                    <a class="active" href="index.html">home</a>
+                </li>
+                <li>
+                    <a href="index - Copy.html">Blog</a>
+                </li>
+            </ul>
+  
+        </div>
+        <div class="item-right">
+            <a href="form.html">Contact Me</a>
+        </div>
+    </nav>
+    <div>
+        <form id="form">
+           <label for="start-date">Start Date</label>
+           <input type="date" id="start-date" name="start-date"><br>
+           <label for="start-time">Start Time</label>
+           <input type="time" id="start-time" name="start-time"><br>
+           <label for="judul">judul</label>
+           <input type="text" id="judul" required>
+           <label for="image">image:</label>
+           <input type="file" id="myFile" required>
+           <br>
+           <label for="description">Deskription</label>
+           <textarea id="description" placeholder="text" required></textarea>
+           <tr>
+               <td>
+                   <input type="submit" value="submit"/>
+               </td>
+           </tr>
+       </form>
+      
+       <div id="myProject1"></div>
+   
+   
+       <script>
+        // menyimpan datanya/menampung
+        const projects = [] // array baru untuk menyimpan objek proyek
+   
+       document.forms['form'].onsubmit = function (event) {
+       event.preventDefault()
+
+     
+
+   
+       const judul = document.forms['form']['judul'].value // ambil nilai nama yang diinput
+       const description = document.forms['form']['description'].value // ambil nilai deskripsi yang diinput
+       const fileInput = document.getElementById('myFile')
+       const file = fileInput.files[0] // ambil file yang diinput
+       const fileUrl = URL.createObjectURL(file) // buat URL dari file
+       const reader = new FileReader()
+       reader.readAsDataURL(file)
+       function getFullYear() {
+        const startdateDiv = document.document.forms['form']['start-date']('start-date').value
+        const starttimeDiv = document.getElementById('start-time').value
+
+        const startDate = new Date(startdateDiv)
+        const startTime = new Date(starttimeDiv)
+        const startDateTime= new Date()
+        startDateTime.setFullYears(startDate.getFullYear())
+        startDateTime.setMonth(startDate.getMonth())
+        startDateTime.setDate(startDate.getDate())
+        startDateTime.setHours(startDate.getHours())
+        startDateTime.setMinutes(startTime.getMinutes())
+        const date = project.startdateDiv
+
+        getFullYear()
+       }
+       // buat objek proyek baru
+       reader.onload = function() {
+       const project = {
+            judul: judul,
+           description: description,
+           fileUrl: reader.result,
+           startDate : startdateDiv
+       }
+   
+       console.log(project)
+   
+       // tambahkan objek proyek ke array
+       projects.push(project)
+   
+       // reset form
+       document.forms['form'].reset()
+   
+       // tampilkan proyek di halaman HTML
+       displayProjects()
+   }
+   }
+   
+   // fungsi untuk menampilkan daftar proyek di halaman HTML
+   function displayProjects() {
+       // hapus semua elemen di dalam elemen myProject1
+       const myProject1 = document.getElementById('myProject1')
+       myProject1.innerHTML = ''
+   
+       // tambahkan div baru untuk setiap proyek
+       for (let i = 0; i < projects.length; i++) {
+           const project = projects[i]
+   
+           // buat div baru untuk proyek
+           const div = document.createElement('div')
+   
+           // tambahkan gambar ke div
+           const img = document.createElement('img')
+           img.src = project.fileUrl
+           img.style.width = '100px'
+           img.style.height = '100px'
+           div.appendChild(img)
+
+          
+       
+           // tambahkan judul proyek ke div
+           const h3 = document.createElement('h3')
+           const a = document.createElement('a') // tambahkan elemen a
+           a.textContent = project.judul
+           
+           a.href = '#' // tambahkan URL di sini
+           a.addEventListener('click', function() {
+               // implementasikan fungsi untuk membuka halaman baru di sini
+               const judul = project.judul;
+               const fileUrl = project.fileUrl;
+               const description = project.description;
+               event.preventDefault() // hindari aksi default elemen a
+               window.open('test.html?judul='+judul+ '&fileUrl='+fileUrl+'&description='+description,'_blank') // buka halaman baru
+   
+                // tunggu halaman baru siap
+       window.addEventListener('load', function() {
+           // tampilkan data di halaman baru
+           document.getElementById('namaOutput').innerHTML = nama;
+           document.getElementById('imageOutput').src = image;
+           document.getElementById('descriptionOutput').innerHTML = description;
+       });
+   
+           })
+   
+           h3.appendChild(a) // tambahkan a ke h3
+           div.appendChild(h3)
+   
+           // tambahkan deskripsi proyek ke div
+           const p = document.createElement('p')
+           p.textContent = project.description
+           div.appendChild(p)
+   
+           // tambahkan tombol edit dan delete ke div
+           const editButton = document.createElement('button')
+           editButton.textContent = 'Edit'
+           editButton.addEventListener('click', function() {
+               // implementasikan fungsi untuk mengedit proyek di sini
+           })
+           div.appendChild(editButton)
+   
+           const deleteButton = document.createElement('button')
+           deleteButton.textContent = 'Delete'
+           deleteButton.addEventListener('click', function() {
+               // implementasikan fungsi untuk menghapus proyek di sini
+           })
+           div.appendChild(deleteButton)
+   
+           // tambahkan div ke myProject1
+           myProject1.appendChild(div)
+       }
+   
+       // fungsi untuk mengedit proyek
+   function editProject(index) {
+     // implementasikan logika untuk mengedit proyek di sini
+     // misalnya, ambil input baru dari user dan ubah nilai di dalam array proyek
+     const newJudul = prompt('Masukkan judul baru:')
+     const newDescription = prompt('Masukkan deskripsi baru:')
+     const fileInput = document.createElement('input')
+     fileInput.type = 'file'
+     fileInput.addEventListener('change', function() {
+       const file = fileInput.files[0]
+       const fileUrl = URL.createObjectURL(file)
+       projects[index].fileUrl = fileUrl
+     })
+     fileInput.click()
+     projects[index].judul = newJudul
+     projects[index].description = newDescription
+   
+     // tampilkan perubahan di halaman HTML
+     displayProjects()
+   }
+   
+   // fungsi untuk menghapus proyek
+   function deleteProject(index) {
+     // hapus proyek dari array
+     projects.splice(index, 1)
+   
+     // tampilkan perubahan di halaman HTML
+     displayProjects()
+   }
+   }
+       </script>
+</div>
+    
+</body>
+
+</html>

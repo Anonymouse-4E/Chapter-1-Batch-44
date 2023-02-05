@@ -1,0 +1,25 @@
+body {
+  margin: 0 !important;
+  padding: 0 !;
+}
+
+.navbar {
+  background-color: rgb(167, 202, 13) !important;
+  padding-left: 100px !important;
+  padding-right: 100px !important;
+  margin-left: 0;
+}
+
+.button {
+  background-color: rgb(195, 233, 25) !important;
+}
+
+.container .box {
+  box-shadow: 2px 1px 37px 18px rgba(157, 23, 231, 0.72) !important;
+  -webkit-box-shadow: 2px 1px 37px 18px rgba(157, 23, 231, 0.72) !important;
+  -moz-box-shadow: 2px 1px 37px 18px rgba(157, 23, 231, 0.72) !important;
+}
+
+svg {
+  margin-bottom: 12px;
+}

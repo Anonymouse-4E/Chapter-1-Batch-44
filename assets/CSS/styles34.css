@@ -1,0 +1,19 @@
+body {
+    background-color: lightgray;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+
+.grid-item {
+    padding: 0 20px 0 20px;
+}

@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+form {
+    width: 350px;
+    margin: 50px auto;
+}
+
+form {
+    width: 650px;
+    /* padding: 50px; */
+    padding-right: 20px;
+    /* margin: 100px; */
+    border: 1px solid black;
+    box-shadow: 0px 0px 20px 0px;
+    border-radius: 2px;
+    text-align: justify;
+    /* background-color: whitesmoke; */
+    background-color: #8bf45c;
+}
+
+/* => untuk div project */
+
+div {
+    /* margin-top: 20px; */
+    margin-top: 8px;
+}
+
+label,
+input:not([type=checkbox]),
+textarea {
+    font-weight: bold;
+    /* width: 100px; */
+    width: 100%;
+    resize: none;
+}
+
+button {
+    background-color: wheat;
+    border: none;
+    color: white;
+    padding: 6px 25px;
+    cursor: pointer;
+    border: 5px;
+}
+
+.btn-left {
+    background-color: rgb(201, 125, 12);
+    border-radius: 50px;
+    color: white;
+    padding: 6px 25px;
+    cursor: pointer;
+    width: 48%;
+    margin-right: 1%;
+}
+
+.btn-right {
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+    padding: 6px 25px;
+    cursor: pointer;
+    width: 48%;
+    margin-left: 1%;
+}
+
+input:not([type=checkbox]),
+textarea {
+    /* width: 500px; */
+    width: 100%;
+    padding: 10px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.button {
+    background-color: rgb(219, 171, 13);
+    border: none;
+    color: rgb(22, 22, 22);
+    padding: 6px 25px;
+    cursor: pointer;
+    border-radius: 5px;
+}

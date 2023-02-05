@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="assets/CSS/Contact-Form.css">
+    <link a href="assets/CSS/styles1.css" rel="stylesheet"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <nav>
+        <div class="item-left">
+            <ul>
+                <li class="imgLogo">
+                    <img src="assets/Images/Brand.png" alt="logoBrand">
+                </li>
+                &nbsp;
+                <li>
+                    <a class="active" href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="index.html">Add Project</a>
+                </li>
+            </ul>
+        </div>
+        <div class="item-right">
+          <a href="Contact.html">Contact Me</a>
+        </div>
+    </nav>
+    <form id="form" action="/Contact" name="Contact">
+        <div>
+            <label for="name">Nama</label>
+            <input type="text" id="name">
+        </div>
+        <div>
+            <label for="email" >Email</label>
+            <input type="email" id="email">
+        </div>
+        <div>
+            <label for="Phone">Phone</label>
+            <input type="text" id="phone">
+        </div>
+        <div>
+            <label type="subjek">subjek</label>
+            <select id="subjek">
+                <option>Front End</option>
+                <option>Back End</option>
+                <option>FullStack</option>
+            </select>
+        </div>
+        <div>
+            <label for="pesan">pesan</label>
+            <textarea id="pesan">
+            </textarea>
+        </div>
+        <div>
+              <button type="submit" value="kirim">submit</button>
+        </div>
+    </form>
+    <script src="assets/JS/Contact-Form.js"></script>
+</body>
+</body>
+</html>

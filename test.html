@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Proyek</title>
+  <link a href="assets/CSS/styles1.css" rel="stylesheet">
+  <link a href="assets/CSS/blog_detail.css" rel="stylesheet">
+  <!-- <style>
+    .col {
+      padding: 0px;
+      width: 400px;
+      height: 450px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 20px 0px;
+      margin: 50px;
+      flex-direction: row-reverse;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+    }
+  </style> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav>
+    <div class="item-left">
+      <ul>
+        <li class="imgLogo">
+          <img src="assets/Images/Brand.png" alt="logoBrand">
+        </li>
+        &nbsp;
+        <li>
+          <a class="active" href="home.html">home</a>
+        </li>
+        <li>
+          <a href="index.html">Add Project</a>
+        </li>
+      </ul>
+    </div>
+    <div class="item-right">
+      <a href="Contact.html">Contact Me</a>
+    </div>
+  </nav>
+  <div class="container py-5">
+    <div class="card card-body m-4 border-dark border-2 rounded-4 p-5" style="box-shadow: 0 0 100px yellow;">
+      <h2 class="text-center" id="namaOutput">Judul</h2>
+      <div class="row mt-5">
+        <div class="col-8">
+          <img id="imageOutput" class="w-100 rounded" src="https://www.solidbackgrounds.com/images/2560x1440/2560x1440-blue-solid-color-background.jpg">
+          <p id="descriptionOutput">testingggg</p>
+        </div>
+        <div class="col-4 fs-5">
+          <b>Durasi</b>
+          <br />
+          <span>
+            <p id="selisihHari" style=" top: 155px;left: 750px;position: absolute;"></p>
+            <img src="https://img.icons8.com/ios-glyphs/30/1A1A1A/time-span.png" style="height: 35px; width: 35px;top: 0px;position: relative;">      
+          </span>
+          <br />
+          <br>
+          <span>
+            <img src="assets/Images/calendar.png" style="height: 35px; width: 35px; top:0px;">
+            <P style="text-align: justify; color: black; top: 225px; left: 755px;position: absolute; " id="awalDate"></P>
+            <span>
+              <P style="text-align: justify; color: black;  top: 225px; left: 850px;position: absolute; " id="akhirDate"></P>
+            </span>
+          </span>
+          <br />
+          <br />
+          <b>Technologies</b>
+          <br />
+          <div class="row">
+            <div class="col-6">
+              <div class="row">
+                <div class="col-3">
+                  <img src="" id="checkbox1"
+                    class="w-100" alt="">
+                </div>
+                <div class="col-9">
+                  <span>Node JS</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-3">
+                  <img
+                    src="" id="checkbox2"
+                    class="w-100" alt="">
+                </div>
+                <div class="col-9">
+                  <span>React JS</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="row">
+                <div class="col-3">
+                  <img
+                    src="" id="checkbox3"
+                    class="w-100" alt="">
+                </div>
+                <div class="col-9">
+                  <span>Next JS</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-3">
+                  <img
+                    src="" id="checkbox4"
+                    class="w-100" alt="">
+                </div>
+                <div class="col-9">
+                  <span>TypeScript</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div style=" position: absolute; left: 700px; width: 150px; top: 300px;">
+            <p id="selisihHari" style=" top: 45px; position: relative; left: 50px;"></p>
+            <img src="https://img.icons8.com/ios-glyphs/30/1A1A1A/time-span.png" style="height: 35px; width: 35px;">
+          </div>
+          <div style=" width: 300px; top: 410px; left: 821px;">
+            <img src="assets/Images/calendar.png" style="height: 35px; width: 35px; top:25px; position: relative;">
+            <P style="text-align: justify; color: black; position: absolute; top: 5px; left: 46px;" id="awalDate"></P>
+          </div>
+          <div style=" width: 300px; top: 490px; left: 821px;">
+            <img src="assets/Images/calendar.png" style="height: 35px; width: 35px; top:25px; position: relative;">
+            <P style="text-align: justify; color: black; position: absolute; top: 6px; left: 46px;" id="akhirDate"></P>
+          </div>
+          <div style=" left:820px ;top:600px;">
+            <p><strong>Technologies</strong></p>
+          </div>
+          <div style=" width: 300px; top: 650px; left: 820px;">
+            <div>
+              <img id="checkbox" src=""></img>
+            </div>
+          </div>
+          <div style=" width: 300px; top: 650px; left: 820px;">
+            <div>
+              <img id="checkbox1" src="">
+            </div>
+          </div>
+          <div style=" width: 300px; top: 650px; left: 820px;">
+            <div>
+              <img id="checkbox2" src="">
+            </div>
+          </div>
+          <div style=" width: 300px; top: 650px; left: 820px;">
+            <div>
+              <img id="checkbox3" src="">
+            </div>
+          </div>
+          <div style=" width: 300px; top: 650px; left: 820px;">
+            <img id="checkbox" src="">
+            <br />
+            <br />
+            <br />
+            <br />
+            <p id="selectedDateOutput">date</p>
+          </div> -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ambil parameter dari URL
+  const urlParams = new URLSearchParams(window.location.search);
+  
+  const judul = urlParams.get('judul');
+  const description = urlParams.get('description');
+  // const tanggal = urlParams.get('tanggal')
+  const checkbox = urlParams.get('checkbox1')
+  const checkbox2 = urlParams.get('checkbox2')
+  const checkbox3 = urlParams.get('checkbox3')
+  const checkbox4 = urlParams.get('checkbox4')
+  const awalDate = urlParams.get('awalDate')
+  const akhirDate = urlParams.get('akhirDate')
+  const selisihHari = urlParams.get('selisihHari')
+  const fileUrl = urlParams.get('fileUrl')
+  const base64Data = decodeURIComponent('encodedBase64Data')
+  
+  // const startDate = urlParams.get('start-date');
+  // const startTime = urlParams.get('start-time');
+
+
+  // tampilkan data di halaman HTML
+  document.getElementById('namaOutput').innerHTML = judul;
+  // document.getElementById('selectedDateOutput').innerHTML = tanggal 
+  document.getElementById('imageOutput').src = fileUrl
+  document.getElementById('descriptionOutput').innerHTML = description;
+  document.getElementById('checkbox1').src = checkbox
+  document.getElementById('checkbox2').src = checkbox2
+  document.getElementById('checkbox3').src = checkbox3
+  document.getElementById('checkbox4').src = checkbox4
+  document.getElementById('awalDate').innerHTML = ` ${awalDate} -`
+  document.getElementById('akhirDate').innerHTML = ` ${akhirDate}`
+  document.getElementById('selisihHari').innerHTML = `${selisihHari}`
+  // document.getElementById('waktu').textContent = startDate;
+  // document.getElementById('jam').textContent =startTime;
+
+</script>
+
+
+</body>
+
+</html>

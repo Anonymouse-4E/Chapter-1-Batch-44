@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+form {
+    width: 350px;
+    margin: 50px auto;
+}
+
+form {
+    width: 550px;
+    padding: 50px;
+    margin: 100px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 20px 0px;
+    border-radius: 2px ;
+    text-align: justify;
+    background-color: whitesmoke;
+} /* => untuk div project */
+
+div {
+    margin-top: 20px;
+    
+}
+
+label,input, textarea {
+    font-weight: bold;
+    width: 100px;
+    resize: none;
+}
+
+button {
+    background-color: wheat;
+    border: none;
+    color: white;
+    padding: 6px 25px;
+    cursor: pointer;
+    border: 5px;
+}
+
+input,textarea {
+    width: 500px;
+    padding: 10px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.button {
+    background-color:black;
+    border: none;
+    color: black;
+    padding: 6px 25px;
+    cursor:pointer ;
+    border-radius: 5px;
+}
